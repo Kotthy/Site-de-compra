@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "The Queens Gambit";
+    src: url('./fonts/THE\ QUEENS\ GAMBIT.TTF')
+    format('truetype');
+  }
+  @font-face {
+    font-family: "Bahnscript"; 
+    src: url('./fonts/BAHNSCHRIFT.TTF') 
+    format('truetype');
+  }
+  
+  ::selection {
+    background-color: #5900ff33;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #1f2f44;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #00ffff;
+    border-radius: 3px;
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #1f2f44;
+    height: fit-content;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    top: 0%;
+    width: 100%;
+    margin: 0;
+    max-height: 1.5cm;
+    transition: background-color 0.8s;
+    z-index: 5;
+}
+.menu h1 a {
+    font-family: The queens Gambit;
+    font-weight: 200;
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #00ffff;
+    
+}
+.menu h2 a {
+    font-family: Bahnscript;
+    font-weight: 200;
+    font-size: 2vw;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #21A390;
+
+}
+.menu h3 {
+    text-decoration: none;
+    user-select: none;
+    font-size: 3vw;
+}
+.menu:hover {
+    background-color: #041322;
+}
+.menu:hover h1 a {
+    color: #d8f6ff
+  }
+  .menu:hover h2 a {
+    color: #00ffff
+  }
+
+  #chisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+  }
+  .kit {
+    position: absolute;
+    top: 11.7cm;
+    left: 1cm;
+    width: 35%;
+    user-select: none;
+  }
+  h2 {
+    color: white;
+    font-family: Bahnscript;
+    font-size: clamp(1em, 1.6vw, 5em);
+    font-weight: bold;
+    margin: 10px;
+    letter-spacing: 7px;
+  }
+  p {
+    color: white;
+    font-family: Bahnscript;
+    font-size: clamp(1.4em, 2.3vw, 8em);
+    font-weight: lighter;
+    margin: 0px;
+  
+  }
+  .losango {
+    width: 80px;
+    height: 80px;
+    background: rgb(26, 188, 156, 0);
+    border: 2px solid #58ecff;
+    position: absolute;
+    top: 17.4cm;
+    left: 1.5cm;
+    transform: rotate(45deg);
+    transition: background 0.5s;
+    text-align: center;
+  }
+  .seta {
+    color: #58ecff;
+    font-size: 80px;
+    font-family: Agency FB;
+    font-weight: lighter;
+    transform: translate(-0%,-10%)rotate(-45deg);
+    transition: color 0.2s;
+  
+  }
+  .losango:hover {
+    background:#58ecff
+  }
+  .seta:hover {
+    color: white
+  }
+  #lente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    margin-top: 53.5vw;
+    margin-left: 45rem;
+  }
+  #lente video {
+    width: 90%
+  }
+  #rodape {
+    background-color: #4eb3e2;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+  
+  }
+  #rodape a {
+    text-decoration: none;
+    color: white;
+    font-family: Bahnscript;
+    font-size: 20px;
+  }
+  .elemrdape {
+    color: white;
+    font-family: Bahnscript;
+    font-size: 20px;
+  }

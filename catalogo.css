@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "The Queens Gambit";
+    src: url('./fonts/THE\ QUEENS\ GAMBIT.TTF')
+    format('truetype');
+}
+@font-face {
+    font-family: "Bahnscript"; 
+    src: url('./fonts/BAHNSCHRIFT.TTF') 
+    format('truetype');
+}
+::selection {
+    background-color: rgb(0 211 255 / 63%);
+  }
+
+*::-webkit-scrollbar {
+    width: 4px;
+} 
+*::-webkit-scrollbar-track {
+    background: #1f2f44;
+} 
+*::-webkit-scrollbar-thumb {
+    background-color: #00ffff;
+    border-radius: 3px;
+}
+body{
+    background-color: #1f2f44;
+    overflow-x: hidden;
+    margin: 0;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    margin: 0;
+    max-height: 1.5cm;
+    transition: background-color 0.8s;
+}
+.menu h1 a {
+    font-family: The queens Gambit;
+    font-weight: 200;
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #00ffff;
+}
+.menu h2 a {
+    font-family: Bahnscript;
+    font-weight: 200;
+    font-size: 2vw;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #21A390;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu h3 {
+    text-decoration: none;
+    user-select: none;
+    font-size: 3vw;
+}
+.menu:hover {
+    background-color: #224257;
+}
+.menu.scrolled {
+    background-color: #121e2c;
+}
+#chisa img {
+    width: 100vw;
+}
+#colection {
+    display: flex;
+    justify-content: center;
+    font-family: Bahnscript;
+    font-size: 20pt;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 1cm;
+    user-select: none;
+    cursor: pointer;
+}
+#escondido {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-style: italic;
+    font-family: Bahnscript;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#mais {
+    color: white;
+    display: inline-flex;
+    transition: transform 1s;
+    font-family: The queen gambit;
+    margin-left: 15px;
+}
+/*produtos*/
+#tecnosense, #airbeam, #flexion, #visionix {
+    width: 30vw;
+    border: 8px solid #00ffff;
+    margin-top: -1.6vw;
+}
+#holowatch {
+    margin-top: 1cm;
+    display: flex;
+    align-items: center;
+}
+.column {
+    flex: 50%;
+}
+#relogio {
+    margin-left: 15vw;
+    width: 30vw;
+    border: 8px solid #00ffff;
+}
+#tecnosensier {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: end;
+    margin-right: 15vw;
+}
+#pc {
+    display: flex;
+    align-items: center;
+    margin-left: 15vw;
+}
+#lente {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: end;
+    margin-right: 15vw;
+}
+#projetor {
+    display: flex;
+    align-items: center;
+    margin-left: 15vw;
+}
+
+
+.produto {
+    font-size: 4vw;
+    font-family: Bahnscript;
+    background: linear-gradient(to right, #00ffff, #1f2f44);
+    width: 50%;
+    color: white;
+}
+.preço {
+    font-size: 1vw;
+    font-family: Bahnscript;
+    background: linear-gradient(to right, #00ffff, #1f2f44);
+    margin: 0px;
+    width: 50%;
+    color: white;
+}
+.produtor {
+    font-size: 4vw;
+    font-family: Bahnscript;
+    background: linear-gradient(to left, #00ffff, #1f2f44, #1f2f44);
+    text-align: right;
+    color: white;
+}
+.preçor {
+    font-size: 1vw;
+    font-family: Bahnscript;
+    margin: 0px;
+    background: linear-gradient(to left, #00ffff, #1f2f44, #1f2f44);
+    color: white;
+}

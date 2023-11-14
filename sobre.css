@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "The Queens Gambit";
+    src: url('./fonts/THE\ QUEENS\ GAMBIT.TTF')
+    format('truetype');
+}
+@font-face {
+    font-family: "Bahnscript"; 
+    src: url('./fonts/BAHNSCHRIFT.TTF') 
+    format('truetype');
+}
+::selection {
+    background-color: rgb(0 211 255 / 63%);
+  }
+
+*::-webkit-scrollbar {
+    width: 4px;
+} 
+*::-webkit-scrollbar-track {
+    background: #1f2f44;
+} 
+*::-webkit-scrollbar-thumb {
+    background-color: #00ffff;
+    border-radius: 3px;
+}
+body{
+    background-color: #1f2f44;
+    overflow-x: hidden;
+    margin: 0;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    margin: 0;
+    max-height: 1.5cm;
+    transition: background-color 0.8s;
+}
+.menu h1 a {
+    font-family: The queens Gambit;
+    font-weight: 200;
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #00ffff;
+}
+.menu h2 a {
+    font-family: Bahnscript;
+    font-weight: 200;
+    font-size: 2vw;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #21A390;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu h3 {
+    text-decoration: none;
+    user-select: none;
+    font-size: 3vw;
+}
+.menu:hover {
+    background-color: #252d57;
+}
+.menu.scrolled {
+    background-color: #121e2c;
+}
+#banner {
+    width: 100vw;
+}
+h4 {
+    text-align: center;
+    font-family: Bahnscript;
+    font-size: 4vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #00ffff;
+}
+p {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    font-family: Bahnscript;
+    font-size: 18pt;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: white;
+    text-indent: 1cm;
+    text-align: justify;
+}
+#processo {
+    margin-top: 1cm;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Bahnscript;
+    font-size: 30px;
+    font-weight: 200;
+    color: #00ffff;
+    cursor: pointer;
+}
+#escondido {
+    margin-top: 0.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+#sites img {
+    width: 30%;
+}
+#ideias {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 1cm;
+}
+#ideias img {
+    height: 8cm;
+}
